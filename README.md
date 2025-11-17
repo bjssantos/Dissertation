@@ -1,4 +1,4 @@
-The LINGO files provided in this repository contain the optimization models used in the Dissertation entitled "Development of Inoperability Assessment and Optimization Framework for an Integrated Plastic Recycling Network". Running these models requires access to LINGO software, which may necessitate a valid license.
+The LINGO files provided in this repository contain the optimization models used in the Dissertation entitled "Development of Inoperability Assessment and Optimization Framework for an Integrated Plastic Recycling Network". Running these models requires access to LINGO software, which might require a valid license.
 
 Using the Model:
 The file can only be run if you have LINGO software installed. To execute it, open the file into the LINGO software, go to the Solver tab, and then click Solve. A new tab will appear showing the optimization results.
