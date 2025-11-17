@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil Aptos;}{\f2\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green175\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\cf1\f0\fs20\lang13321 !CRISP OPTIMIZATION FRAMEWORK FOR IPRN UNDER DISRUPTION DUE TO SUPPLY SHORTAGES;\cf2\par
+\par
+\cf3 SETS\cf2 :\par
+OUTPUTSTREAM: YSTAR, PRICE;\par
+INPUTSTREAM: ZINPUT;\par
+RAWPLASTICWASTE: ZRAW, SMAX;\par
+PROCESS: XSTAR, XMINPER, XMAX, T;\par
+AMATRIX (OUTPUTSTREAM, PROCESS): A;\par
+BMATRIX (INPUTSTREAM, PROCESS): B;\par
+ZMATRIX (RAWPLASTICWASTE, INPUTSTREAM): Z;\par
+SMATRIX (RAWPLASTICWASTE, INPUTSTREAM): S;\par
+\cf3 ENDSETS\cf2\par
+\par
+\par
+\cf3 DATA\cf2 :\par
+\par
+\cf1 !INPUT DATA HERE;\cf2\par
+OUTPUTSTREAM = \tab RECYPET\tab METHANOL\tab RECYPLAT\tab H2\tab\tab SYNGAS\tab GASO\tab\tab ETHYL\tab\tab PROPYL\tab STEAM\tab\tab ELEC;\par
+INPUTSTREAM =\tab METHANOLYI\tab MECHRECYI\tab GASII\tab\tab PYROI;\par
+RAWPLASTICWASTE =\tab SORTEDPET\tab SSP\tab\tab MPWCO\tab\tab MWPWO;\par
+PROCESS = \tab\tab METHANOLY\tab METHELEC\tab MECHRECY\tab H2ELEC \tab GASI\tab\tab PYRO\tab\tab BOILER;\par
+\par
+\cf1 !A represents process matrix;\cf2\par
+A = \par
+\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl\f1\lang1033 1\cell 0\cell 0\cell 0\cell 0\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl -0.18\cell 1\cell 0\cell 0\cell 0\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trrh210\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 1\cell 0\cell 0\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 1\cell 0\cell -0.029\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl -0.51\cell -2.4\cell -0.035\cell -14\cell 1\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trrh270\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 0\cell 0\cell 1\cell -0.08\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 0\cell 0\cell 0.35\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 0\cell 0\cell 0.25\cell 0\cell\row\trowd\trgaph30\trleft-30\trrh225\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl -10.4\cell 0\cell 0\cell -6\cell -0.11\cell 0\cell 1\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\clbrdrb\brdrw15\brdrs \cellx1340\clbrdrb\brdrw15\brdrs \cellx2920\clbrdrb\brdrw15\brdrs \cellx4468\clbrdrb\brdrw15\brdrs \cellx6128\clbrdrb\brdrw15\brdrs \cellx7868\clbrdrb\brdrw15\brdrs \cellx9704\clbrdrb\brdrw15\brdrs \cellx11252 
+\pard\intbl -0.79\cell 1.9\cell -0.45\cell 7.5\cell -0.21\cell -0.14\cell -0.01\f0\lang13321 ;\f1\lang1033\cell\row 
+\pard\f0\par
+\cf1\lang13321 !B represents resource matrix;\cf2\lang1033\par
+B =\par
+\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl\f1 1.2\cell 0\cell 0\cell 0\cell 0\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 1.2\cell 0\cell 0\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 0\cell 0.49\cell 0\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1340\cellx2920\cellx4468\cellx6128\cellx7868\cellx9704\cellx11252 
+\pard\intbl 0\cell 0\cell 0\cell 0\cell 0\cell 5.3\cell 0\f0\lang13321 ;\f1\lang1033\cell\row 
+\pard\f0\par
+\cf1\lang13321 !Price of Products;\cf2\lang1033\par
+PRICE =\par
+\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1002\cellx2339\cellx3371\cellx4403\cellx5435\cellx6467\cellx7499\cellx8531\cellx9563\cellx10595 
+\pard\intbl\f1 1.4\cell 0.4\cell 0.2\cell 3.5\cell 0\cell 1.4\cell 1.06\cell 1.21\cell 0.02\cell 0.15\f0\lang13321 ;\f1\lang1033\cell\row 
+\pard\f0\par
+\cf1 !S represents substitutability;\cf2\par
+S =\par
+\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1549\cellx3097\cellx4758\cellx6498 
+\pard\intbl\f1 1\cell 0\cell\f0\lang13321 1\f1\lang1033\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1549\cellx3097\cellx4758\cellx6498 
+\pard\intbl 0\cell 1\cell\f0\lang13321 1\f1\lang1033\cell\f0\lang13321 1\f1\lang1033\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1549\cellx3097\cellx4758\cellx6498 
+\pard\intbl 0\cell 0\cell\f0\lang13321 1\f1\lang1033\cell 0\cell\row\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\cellx1549\cellx3097\cellx4758\cellx6498 
+\pard\intbl 0\cell 0\cell 0\cell 1\f0\lang13321 ;\f1\lang1033\cell\row 
+\pard\f0\par
+\cf1 !ZRAW represents raw plastic waste input;\cf2\par
+ZRAW =\par
+1000\tab\tab 8000\tab\tab 9000\tab\tab 9000;\par
+\par
+\cf1 !SMAX represents maximum fractional substitution limts;\cf2\par
+SMAX =\par
+0.1\tab\tab 0.1\tab\tab 0.1\tab\tab 0.1;\par
+\par
+M = 1000000000;\par
+\par
+\cf1 !XMAX represents the maximum/baseline capacities;\cf2\par
+XMAX =\par
+\trowd\trgaph30\trleft-30\trpaddl30\trpaddr30\trpaddfl3\trpaddfr3
+\clbrdrb\brdrw15\brdrs \cellx1340\clbrdrb\brdrw15\brdrs \cellx2920\clbrdrb\brdrw15\brdrs \cellx4468\clbrdrb\brdrw15\brdrs \cellx6128\clbrdrb\brdrw15\brdrs \cellx7868\clbrdrb\brdrw15\brdrs \cellx9704\clbrdrb\brdrw15\brdrs \cellx11252 
+\pard\intbl\f1\lang13321 833.3333333\cell 4993.246748\cell 6666.666667\cell 554.7169811\cell 20408.16327\cell 1886.792453\cell 14239.86651\f0 ;\f1\cell\row 
+\pard\f0\par
+\cf1\lang1033 !XMINPER represents the minimum feasible capacity as percentage of baseline values;\cf2\par
+XMINPER =\par
+\lang13321 0.8\tab\tab 0.6\tab\tab 0.8\tab\tab 0.8\tab\tab 0.6\tab\tab 0.8\tab\tab 0.6;\lang1033\par
+\par
+\cf3 ENDDATA\cf2\par
+\par
+\par
+\cf1 !OPTIMIZATION MODEL;\cf2\par
+\par
+\cf1 !Optimization Objective;\cf2\par
+\cf3 MAX\cf2  = REVENUE;\par
+REVENUE = \cf3 @SUM\cf2 (OUTPUTSTREAM(L):PRICE(L)*YSTAR(L));\par
+\par
+\cf1 !Mass Balances;\cf2\par
+\cf3 @FOR\cf2 (OUTPUTSTREAM(L): YSTAR(L) = \cf3 @SUM\cf2 (PROCESS(K):A(L,K)*XSTAR(K)));\par
+\cf3 @FOR\cf2 (INPUTSTREAM(J): ZINPUT(J) = \cf3 @SUM\cf2 (PROCESS(K):B(J,K)*XSTAR(K)));\par
+\par
+\cf1 !Input Substitution;\cf2\par
+\cf3 @FOR\cf2 (RAWPLASTICWASTE(I):\cf3 @FOR\cf2 (INPUTSTREAM(J): Z(I,J) < S(I,J)*M));\par
+\cf3 @FOR\cf2 (INPUTSTREAM(J): ZINPUT(J) = \cf3 @SUM\cf2 (RAWPLASTICWASTE(I):Z(I,J)));\par
+\cf3 @FOR\cf2 (RAWPLASTICWASTE(I): ZRAW(I) > \cf3 @SUM\cf2 (INPUTSTREAM(J):Z(I,J)));\par
+\par
+\cf1 !Limit of Substitution;\cf2\par
+\cf3 @FOR\cf2 (RAWPLASTICWASTE(I):\cf3 @FOR\cf2 (INPUTSTREAM(J)|I#EQ#J: Z(J,J) > (1 - SMAX(J))*ZINPUT(J)));\par
+\par
+\cf1 !Operating Ranges of each Component Unit;\cf2\par
+\cf3 @FOR\cf2 (PROCESS(K): XMINPER(K)*XMAX(K)*T(K) < XSTAR(K));\par
+\cf3 @FOR\cf2 (PROCESS(K): XSTAR(K) < XMAX(K)*T(K));\par
+\cf3 @FOR\cf2 (PROCESS(K): \cf3 @BIN\cf2 (T(K)));\par
+\par
+\f2\par
+\cf1\f0 !Notations\par
+i - raw plastic waste input\par
+j - plastic waste input after substitution\par
+k - component unit\par
+l - output;\cf2\par
+\f2\par
+\par
+\par
+\f0\par
+\par
+\par
+
+\pard\cf0\par
+}
+ 
