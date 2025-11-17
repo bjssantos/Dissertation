@@ -1,4 +1,4 @@
-User Guide:
+Brief User Guide:
 
 The LINGO files provided in this repository contain the optimization models used in the Dissertation entitled "Development of Inoperability Assessment and Optimization Framework for an Integrated Plastic Recycling Network". Running these models requires access to LINGO software, which might require a valid license.
 
